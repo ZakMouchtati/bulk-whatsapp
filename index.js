@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'mall_whtasapp'
+    database: 'mall'
 });
 connection.connect()
 const client = new Client();
@@ -36,7 +36,7 @@ Venez profiter de réductions exceptionnelles allant jusqu'à -70% dans de nombr
 Les soldes d’été au Morocco Mall, c’est le grand rdv des bonnes affaires.
 
                 `
-                    const media = await MessageMedia.fromFilePath('./1080x1080 px  exe MM VF ok.jpg');
+                    const media = await MessageMedia.fromFilePath('./DPL ANNIVERSAIRE_market.pdf');
                     const pdfSend = await client.sendMessage(`${phone}@c.us`,media)
                     const messagepdf = {
                         message_id: pdfSend.id.id,
